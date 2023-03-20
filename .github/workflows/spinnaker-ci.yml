@@ -7,7 +7,7 @@ env:
   #REGISTRY_URL: "gcr.io/spinnaker-marketplace/"
   REGISTRY_URL: "us-docker.pkg.dev/spinnaker-community/docker/"
   NEW_REGISTRY_URL: "registry.cn-beijing.aliyuncs.com/spinnaker-cd/"
-  NEW_REGISTRY_URL2: "docker.io/spinnakercd/"
+  NEW_REGISTRY_URL2: "lostar01/spinnakercd/"
   TAG_FILE: "tagfile.txt"
   BOM_DIR: ".boms"
   
@@ -56,7 +56,7 @@ jobs:
       
         echo  -e "\033[32m  ---> Tag File ---> \033[0m"
         cat ${TAG_FILE}
-        docker login -u ${{ secrets.DOCKER_USER}} -p ${{ secrets.DOCKER_PASSWD}} ${NEW_REGISTRY_URL}
+        #docker login -u ${{ secrets.DOCKER_USER}} -p ${{ secrets.DOCKER_PASSWD}} ${NEW_REGISTRY_URL}
         for tag in $(cat ${TAG_FILE})
         do 
            echo  -e "\033[32m  ---> pull ---> ${REGISTRY_URL}${tag} \033[0m"
