@@ -7,7 +7,7 @@ env:
   #REGISTRY_URL: "gcr.io/spinnaker-marketplace/"
   REGISTRY_URL: "us-docker.pkg.dev/spinnaker-community/docker/"
   NEW_REGISTRY_URL: "registry.cn-beijing.aliyuncs.com/spinnaker-cd/"
-  NEW_REGISTRY_URL2: "lostar01"
+  NEW_REGISTRY_URL2: "lostar01/"
   TAG_FILE: "tagfile.txt"
   BOM_DIR: ".boms"
   
